@@ -1,4 +1,4 @@
-Ext.define('MyLab.view.main.AnimationsController', {
+Ext.define('MyLab.view.animations.AnimationsController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.animations',
 

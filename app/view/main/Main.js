@@ -35,11 +35,12 @@ Ext.define('MyLab.view.main.Main', {
                 xtype: 'animations'
             }]
         },{
-            title: 'Usuarios',
-            iconCls: 'x-fa fa-user',
-            bind: {
-                html: '{loremIpsum}'
-            }
+            title: 'Botões',
+            iconCls: 'x-fa fa-cube',
+
+            items: [{
+                xtype: 'basicbuttons'
+            }]
         },{
             title: 'Grupos',
             iconCls: 'x-fa fa-users',

@@ -1,13 +1,13 @@
 /*
  * Demonstrates all the animations
  */
-Ext.define('MyLab.view.main.Animations', {
+Ext.define('MyLab.view.animations.Animations', {
     extend: 'Ext.Container',
     xtype: 'animations',
     controller: 'animations',
 
     requires: [
-        'MyLab.view.main.AnimationsController'
+        'MyLab.view.animations.AnimationsController'
     ],
 
     height: 430,
