@@ -24,7 +24,6 @@ Set _isodate=%_dd%.%_mm%.%_yyyy% %_hour%:%_minute%
 
 :: FAZ O COMMIT
 echo Iniciando deploy de %_isodate%
-git add/rm
 git add . 
 git commit -m "%_isodate%"
 git push -u origin master
