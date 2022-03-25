@@ -9,7 +9,8 @@ Ext.define('MyLab.view.main.Main', {
 
     requires: [
         'Ext.MessageBox',
-        'Ext.layout.Fit'
+        'Ext.layout.Fit',
+        'Ext.layout.Center'
     ],
 
     controller: 'main',
@@ -28,7 +29,6 @@ Ext.define('MyLab.view.main.Main', {
         // TODO - Replace the content of this view to suit the needs of your application.
         {
             title: 'Animações',
-            iconCls: 'x-fa fa-home',
             layout: 'fit',
             // The following grid shares a store with the classic version's grid as well!
             items: [
@@ -48,7 +48,6 @@ Ext.define('MyLab.view.main.Main', {
         },{
 
             title: 'Botões Basic',
-            iconCls: 'x-fa fa-cube',
 
             items: [
                 {
@@ -67,7 +66,6 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Extra',
-            iconCls: 'x-fa fa-cube',
 
             items: [
                 {
@@ -86,7 +84,6 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Split',
-            iconCls: 'x-fa fa-cube',
 
             items: [
                 {
@@ -105,7 +102,6 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Split Bottom',
-            iconCls: 'x-fa fa-cube',
 
             items: [
                 {
@@ -124,7 +120,6 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Segmented Bottom',
-            iconCls: 'x-fa fa-cube',
 
             items: [
                 {
@@ -143,7 +138,6 @@ Ext.define('MyLab.view.main.Main', {
 
         }, {
             title: 'Carousel',
-            iconCls: 'x-fa fa-users',
 
             items: [
                 {
@@ -152,19 +146,12 @@ Ext.define('MyLab.view.main.Main', {
             ]
         },{
             title: 'Carousel Vertical',
-            iconCls: 'x-fa fa-users',
 
             items: [
                 {
                     xtype: 'verticalcarousel'
                 }
             ]
-        },{
-            title: 'Configurações',
-            iconCls: 'x-fa fa-cog',
-            bind: {
-                html: '{loremIpsum}'
-            }
         }
     ]
 });
