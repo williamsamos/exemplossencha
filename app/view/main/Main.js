@@ -42,11 +42,12 @@ Ext.define('MyLab.view.main.Main', {
                 xtype: 'basicbuttons'
             }]
         },{
-            title: 'Grupos',
+            title: 'Carousel',
             iconCls: 'x-fa fa-users',
-            bind: {
-                html: '{loremIpsum}'
-            }
+
+            items: [{
+                xtype: 'carouselbasic'
+            }]
         },{
             title: 'Configurações',
             iconCls: 'x-fa fa-cog',

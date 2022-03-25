@@ -20,9 +20,9 @@ Ext.define('MyLab.view.animations.Animations', {
     anims: [{
         group: 'Slide'
     }, {
-        group: 'Cobrir'
+        group: 'Cover'
     }, {
-        group: 'Revelar'
+        group: 'Reveal'
     },
             'Fade',
             'Pop',
