@@ -236,7 +236,7 @@
             ui: 'action'
         },
         items: [{
-            text: 'Style',
+            text: 'Estilo (style)',
             menu: {
                 bind: {
                     groups: '{buttonStyle}'
@@ -254,7 +254,7 @@
                 ]
             }
         }, {
-            text: 'Type',
+            text: 'Tipo (type)',
             menu: {
                 bind: {
                     groups: '{buttonType}'

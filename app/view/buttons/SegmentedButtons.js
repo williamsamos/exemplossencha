@@ -18,12 +18,12 @@
         {
             xtype: 'segmentedbutton',
             items: [{
-                text: 'Option 1'
+                text: 'Opção 1'
             }, {
-                text: 'Option 2',
+                text: 'Opção 2',
                 pressed: true
             }, {
-                text: 'Option 3'
+                text: 'Opção 3'
             }]
         }
     ]

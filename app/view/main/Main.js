@@ -31,64 +31,134 @@ Ext.define('MyLab.view.main.Main', {
             iconCls: 'x-fa fa-home',
             layout: 'fit',
             // The following grid shares a store with the classic version's grid as well!
-            items: [{
-                xtype: 'animations'
-            }]
+            items: [
+                {
+                    xtype: "panel",
+                    layout: "center",
+                    title: "Animações",
+
+                    items: [
+                        {
+                            xtype: 'animations'
+                        }
+                    ]
+                }
+            
+            ]
         },{
 
             title: 'Botões Basic',
             iconCls: 'x-fa fa-cube',
 
-            items: [{
-                xtype: 'basicbuttons'
-            }]
+            items: [
+                {
+                    xtype: "panel",
+                    layout: "center",
+                    title: "Botões basicos",
+
+                    items: [
+                        {
+                            xtype: 'basicbuttons'
+                        }
+                    ]
+                
+                }
+            ]
 
         },{
             title: 'Botões Extra',
             iconCls: 'x-fa fa-cube',
 
-            items: [{
-                xtype: 'extrabuttons'
-            }]
+            items: [
+                {
+                    xtype: "panel",
+                    layout: "center",
+                    title: "Botões extras",
+
+                    items: [
+                        {
+                            xtype: 'extrabuttons'
+                        }
+                    ]
+                
+                }
+            ]
 
         },{
             title: 'Botões Split',
             iconCls: 'x-fa fa-cube',
 
-            items: [{
-                xtype: 'splitbuttons'
-            }]
+            items: [
+                {
+                    xtype: "panel",
+                    layout: "center",
+                    title: "Botões split com opçoes em dropdown arrow",
+
+                    items: [
+                        {
+                            xtype: 'splitbuttons'
+                        }
+                    ]
+                
+                }
+            ]
 
         },{
             title: 'Botões Split Bottom',
             iconCls: 'x-fa fa-cube',
 
-            items: [{
-                xtype: 'splitbottombuttons'
-            }]
+            items: [
+                {
+                    xtype: "panel",
+                    layout: "center",
+                    title: "Botões split com opçoes em dropdown arrow em baixo",
+
+                    items: [
+                        {
+                            xtype: 'splitbottombuttons'
+                        }
+                    ]
+                
+                }
+            ]
 
         },{
             title: 'Botões Segmented Bottom',
             iconCls: 'x-fa fa-cube',
 
-            items: [{
-                xtype: 'segmentedbuttons'
-            }]
+            items: [
+                {
+                    xtype: "panel",
+                    layout: "center",
+                    title: "Botões segmentados(um container de botoes com as opções)",
+
+                    items: [
+                        {
+                            xtype: 'segmentedbuttons'
+                        }
+                    ]
+                
+                }
+            ]
 
         }, {
             title: 'Carousel',
             iconCls: 'x-fa fa-users',
 
-            items: [{
-                xtype: 'carouselbasic'
-            }]
+            items: [
+                {
+                    xtype: 'carouselbasic'
+                }
+            ]
         },{
             title: 'Carousel Vertical',
             iconCls: 'x-fa fa-users',
 
-            items: [{
-                xtype: 'verticalcarousel'
-            }]
+            items: [
+                {
+                    xtype: 'verticalcarousel'
+                }
+            ]
         },{
             title: 'Configurações',
             iconCls: 'x-fa fa-cog',
