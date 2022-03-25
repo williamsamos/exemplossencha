@@ -35,18 +35,59 @@ Ext.define('MyLab.view.main.Main', {
                 xtype: 'animations'
             }]
         },{
-            title: 'Botões',
+
+            title: 'Botões Basic',
             iconCls: 'x-fa fa-cube',
 
             items: [{
                 xtype: 'basicbuttons'
             }]
+
         },{
+            title: 'Botões Extra',
+            iconCls: 'x-fa fa-cube',
+
+            items: [{
+                xtype: 'extrabuttons'
+            }]
+
+        },{
+            title: 'Botões Split',
+            iconCls: 'x-fa fa-cube',
+
+            items: [{
+                xtype: 'splitbuttons'
+            }]
+
+        },{
+            title: 'Botões Split Bottom',
+            iconCls: 'x-fa fa-cube',
+
+            items: [{
+                xtype: 'splitbottombuttons'
+            }]
+
+        },{
+            title: 'Botões Segmented Bottom',
+            iconCls: 'x-fa fa-cube',
+
+            items: [{
+                xtype: 'segmentedbuttons'
+            }]
+
+        }, {
             title: 'Carousel',
             iconCls: 'x-fa fa-users',
 
             items: [{
                 xtype: 'carouselbasic'
+            }]
+        },{
+            title: 'Carousel Vertical',
+            iconCls: 'x-fa fa-users',
+
+            items: [{
+                xtype: 'verticalcarousel'
             }]
         },{
             title: 'Configurações',
