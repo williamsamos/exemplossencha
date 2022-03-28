@@ -183,6 +183,31 @@ Ext.define('MyLab.view.main.Main', {
             ]
 
 
+        },
+
+        {
+            title: 'Nested Loading',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Carregamento alinhado",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "nestedloading"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
         }
     ]
 });
