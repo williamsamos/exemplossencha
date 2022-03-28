@@ -33,9 +33,9 @@ Ext.define('MyLab.view.main.Main', {
             // The following grid shares a store with the classic version's grid as well!
             items: [
                 {
-                    xtype: "panel",
-                    layout: "center",
+                    xtype: "bgpanel",
                     title: "Animações",
+                    layout: 'center',
 
                     items: [
                         {
@@ -48,16 +48,21 @@ Ext.define('MyLab.view.main.Main', {
         },{
 
             title: 'Botões Basic',
+            layout: 'fit',
 
             items: [
                 {
-                    xtype: "panel",
-                    layout: "center",
+                    xtype: "bgpanel",
                     title: "Botões basicos",
 
                     items: [
                         {
-                            xtype: 'basicbuttons'
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "basicbuttons"
+                                }
+                            ]
                         }
                     ]
                 
@@ -66,16 +71,21 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Extra',
+            layout: 'fit',
 
             items: [
                 {
-                    xtype: "panel",
-                    layout: "center",
+                    xtype: "bgpanel",
                     title: "Botões extras",
 
                     items: [
                         {
-                            xtype: 'extrabuttons'
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "extrabuttons"
+                                }
+                            ]
                         }
                     ]
                 
@@ -84,16 +94,21 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Split',
+            layout: 'fit',
 
             items: [
                 {
-                    xtype: "panel",
-                    layout: "center",
+                    xtype: "bgpanel",
                     title: "Botões split com opçoes em dropdown arrow",
 
                     items: [
                         {
-                            xtype: 'splitbuttons'
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "splitbuttons"
+                                }
+                            ]
                         }
                     ]
                 
@@ -102,16 +117,21 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Split Bottom',
+            layout: 'fit',
 
             items: [
                 {
-                    xtype: "panel",
-                    layout: "center",
+                    xtype: "bgpanel",
                     title: "Botões split com opçoes em dropdown arrow em baixo",
 
                     items: [
                         {
-                            xtype: 'splitbottombuttons'
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "splitbottombuttons"
+                                }
+                            ]
                         }
                     ]
                 
@@ -120,16 +140,21 @@ Ext.define('MyLab.view.main.Main', {
 
         },{
             title: 'Botões Segmented Bottom',
+            layout: 'fit',
 
             items: [
                 {
-                    xtype: "panel",
-                    layout: "center",
+                    xtype: "bgpanel",
                     title: "Botões segmentados(um container de botoes com as opções)",
 
                     items: [
                         {
-                            xtype: 'segmentedbuttons'
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "segmentedbuttons"
+                                }
+                            ]
                         }
                     ]
                 
@@ -138,6 +163,8 @@ Ext.define('MyLab.view.main.Main', {
 
         }, {
             title: 'Carousel',
+            xtype: "bgpanel",
+            layout: "fit",
 
             items: [
                 {
@@ -146,12 +173,16 @@ Ext.define('MyLab.view.main.Main', {
             ]
         },{
             title: 'Carousel Vertical',
+            xtype: "bgpanel",
+            layout: "fit",
 
             items: [
                 {
                     xtype: 'verticalcarousel'
                 }
             ]
+
+
         }
     ]
 });
