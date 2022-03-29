@@ -233,6 +233,160 @@ Ext.define('MyLab.view.main.Main', {
                 }
             ]
 
+        },
+
+        {
+            title: 'Json P',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Carregar previsão do tempo",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "jsonp"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Ajax',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Carregar dados de um arquivo json",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "ajax"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Hello World - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Um simples exemplo de data binding",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-hello-world"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Dynamic - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Um exemplo de data binding dinamico, onde os valores definidos mudam de acordo com a situação.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-dynamic"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'TwoWay - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Um exemplo de data binding dos dois lados, onde o valor definido no textfield será inserido/refletido automaticamente no titulo.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-two-way"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Formula - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding com formulas matematicas, onde o valor definido no textfield será inserido automaticamente nas formulas e nos seus respectivos resultados.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-formulas"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
         }
+        
     ]
 });
