@@ -186,6 +186,31 @@ Ext.define('MyLab.view.main.Main', {
         },
 
         {
+            title: 'Color picker',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Selecionar cor",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "color-selector"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
             title: 'Nested Loading',
             layout: 'fit',
 
