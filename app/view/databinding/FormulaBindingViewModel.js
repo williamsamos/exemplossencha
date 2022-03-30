@@ -1,4 +1,4 @@
-Ext.define('KitchenSink.view.binding.FormulaModel', {
+Ext.define('MyLab.view.databinding.FormulaBindingViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.binding-formulas',
 

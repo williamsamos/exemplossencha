@@ -386,6 +386,135 @@ Ext.define('MyLab.view.main.Main', {
                 }
             ]
 
+        },
+
+
+        {
+            title: 'Association - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding usando associações de dados.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-associations"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Component State - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding onde as propiedades de um componente variam de acordo com o estado dos outros componentes.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-component-state"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Chained Store - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding usando cadeia de dados filtrados, dos registros, quais as pessoas que atedem a condicão na faixa de idade.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-chained-stores"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Chained Select - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding usando cadeia de dados filtradas de acordo com outros dados selecionados.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-combo-chaining"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Selection - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite editar os dados do model selecionado escrevendo nos fields",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-selection"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
         }
         
     ]
