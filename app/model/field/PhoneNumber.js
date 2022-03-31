@@ -7,7 +7,7 @@ Ext.define('MyLab.model.field.PhoneNumber', {
         {
             type: 'format',
             matcher: /^\d{3}-?\d{3}-?\d{4}$/,
-            message: 'Must be in the format xxx-xxx-xxxx'
+            message: 'Precisa estar no formato xxx-xxx-xxxx'
         }
     ]
 });

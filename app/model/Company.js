@@ -2,7 +2,7 @@ Ext.define('MyLab.model.Company', {
     extend: 'MyLab.model.Base',
     requires: [
         'MyLab.model.field.PhoneNumber',
-        'Ext.data.proxy.Rest'
+        'Ext.data.proxy.Ajax'
     ],
     fields: [
         { name: 'name' },
@@ -106,11 +106,15 @@ Ext.define('MyLab.model.Company', {
         reader: {
             type: 'json'
         },
-        url: '/MyLab/Company'
+        
+        url: 'data/empresas.json'
     },
 
     validators: {
-        name: 'presence'
+        name: {
+            type: "presence",
+            message: "Campo obrigatório!"
+        }
     },
 
     addPriceTick: function() {

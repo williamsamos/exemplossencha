@@ -22,8 +22,15 @@ Ext.define('MyLab.view.main.Main', {
         }
     },
 
+    
+
     tabBarPosition: 'left',
     tabRotation: "top",
+    
+    scrollable: true,
+    tabBar: {
+        scrollable: 'y'
+    },
 
     items: [
         // TODO - Replace the content of this view to suit the needs of your application.
@@ -507,6 +514,108 @@ Ext.define('MyLab.view.main.Main', {
                             items: [
                                 {
                                     xtype: "binding-selection"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'SliderForm - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite definir a cor de fundo, dinamicamente, enquando usamos o formulário deslizante para definir o valor numa escala RGB de 0 a 255.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-form"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'ModelValidation - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite fazer valicação dos dados digitados, com os validators do model.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-model-validation"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'FieldValidation - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite fazer valicação dos fields do formulario",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-field-validation"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'TwoWay Formulas - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite aplicar formulas matematicas nos fields, assim que algum field é alterado, essa alteração reflete em todos os outros. De Kelvin ele converte para outros tipos.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-two-way-formulas"
                                 }
                             ]
                         }
