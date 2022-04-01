@@ -6,6 +6,7 @@
 Ext.define('MyLab.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
+    cls: "MainPanel",
 
     requires: [
         'Ext.MessageBox',
@@ -16,20 +17,29 @@ Ext.define('MyLab.view.main.Main', {
     controller: 'main',
     viewModel: 'main',
 
+    
     defaults: {
         tab: {
             iconAlign: 'top'
         }
     },
-
+    
     
 
     tabBarPosition: 'left',
     tabRotation: "top",
     
     scrollable: true,
+
     tabBar: {
-        scrollable: 'y'
+        scrollable: 'y',
+
+        //Tamanho dos itens
+        defaults: {
+            height: 200
+        },
+
+        width: 200
     },
 
     items: [
@@ -616,6 +626,82 @@ Ext.define('MyLab.view.main.Main', {
                             items: [
                                 {
                                     xtype: "binding-two-way-formulas"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Binary Operators - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite realizar varias verificações booleanas com base nos valores dos fields, e exibir dinamicamente o resultado.",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-algebra-binary-operators"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Ternary Operators - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite usar condições com operador ternario",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-algebra-ternary-operators"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Formatter Binding - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding que permite formatar dinamicamente os valores dos fields",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-algebra-formatters-binding"
                                 }
                             ]
                         }
