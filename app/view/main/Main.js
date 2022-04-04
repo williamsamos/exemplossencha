@@ -36,7 +36,8 @@ Ext.define('MyLab.view.main.Main', {
 
         //Tamanho dos itens
         defaults: {
-            height: 200
+            height: 200,
+            minHeight: 30
         },
 
         width: 200
@@ -702,6 +703,82 @@ Ext.define('MyLab.view.main.Main', {
                             items: [
                                 {
                                     xtype: "binding-algebra-formatters-binding"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Unary - data binding',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data binding com operador unario, trabalha apenas com um unico valor, neste caso, o X",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "binding-algebra-unary-binding"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+
+        {
+            title: 'Basic Data View',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data View basico",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "dataview-basic"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Multi Sort Data View',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data View multi sort",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "dataview-multisort"
                                 }
                             ]
                         }
