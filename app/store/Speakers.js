@@ -22,7 +22,7 @@ Ext.define('MyLab.store.Speakers', {
         },
 
         {
-            'id': 1,
+            'id': 2,
             'first_name': 'Will',
             'last_name': 'teste de sobrenome',
             'sessionIds': 1,
@@ -35,7 +35,7 @@ Ext.define('MyLab.store.Speakers', {
         },
 
         {
-            'id': 1,
+            'id': 3,
             'first_name': 'Teste',
             'last_name': 'teste de sobrenome',
             'sessionIds': 1,
