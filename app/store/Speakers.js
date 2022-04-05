@@ -20,6 +20,32 @@ Ext.define('MyLab.store.Speakers', {
             'url': 'localhost',
             'twitter': 'Nao tem twitter'
         },
+
+        {
+            'id': 1,
+            'first_name': 'Will',
+            'last_name': 'teste de sobrenome',
+            'sessionIds': 1,
+            'bio': 'Teste de biografia',
+            'position': 1,
+            'photo': "a foto",
+            'affiliation': 'Samos',
+            'url': 'localhost',
+            'twitter': 'Nao tem twitter'
+        },
+
+        {
+            'id': 1,
+            'first_name': 'Teste',
+            'last_name': 'teste de sobrenome',
+            'sessionIds': 1,
+            'bio': 'Teste de biografia',
+            'position': 1,
+            'photo': "a foto",
+            'affiliation': 'Samos',
+            'url': 'localhost',
+            'twitter': 'Nao tem twitter'
+        },
     ],
 
     proxy: {
