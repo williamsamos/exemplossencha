@@ -11,7 +11,7 @@ Ext.define('MyLab.store.Speakers', {
         {
             'id': 1,
             'first_name': 'William',
-            'last_name': 'teste de sobrenome',
+            'last_name': 'teste',
             'sessionIds': 1,
             'bio': 'Teste de biografia',
             'position': 1,
@@ -24,7 +24,7 @@ Ext.define('MyLab.store.Speakers', {
         {
             'id': 2,
             'first_name': 'Will',
-            'last_name': 'teste de sobrenome',
+            'last_name': 'sobrenome',
             'sessionIds': 1,
             'bio': 'Teste de biografia',
             'position': 1,
@@ -37,7 +37,7 @@ Ext.define('MyLab.store.Speakers', {
         {
             'id': 3,
             'first_name': 'Teste',
-            'last_name': 'teste de sobrenome',
+            'last_name': 'sobrenome',
             'sessionIds': 1,
             'bio': 'Teste de biografia',
             'position': 1,
