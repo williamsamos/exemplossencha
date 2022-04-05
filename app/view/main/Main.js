@@ -787,6 +787,32 @@ Ext.define('MyLab.view.main.Main', {
                 }
             ]
 
+        },
+
+
+        {
+            title: 'Horizontal Data View',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data View com elementos na horizontal",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "dataview-horizontal"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
         }
         
     ]
