@@ -813,6 +813,56 @@ Ext.define('MyLab.view.main.Main', {
                 }
             ]
 
+        },
+
+        {
+            title: 'Inline Data View',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Data View com elementos na linha",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "dataview-inline"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
+        },
+
+        {
+            title: 'Drag and Drop',
+            layout: 'fit',
+
+            items: [
+                {
+                    xtype: "bgpanel",
+                    title: "Exemplo de elemento arrasta e solta, drag and drop",
+
+                    items: [
+                        {
+                            xtype: 'panel',
+                            items: [
+                                {
+                                    xtype: "drag-simple"
+                                }
+                            ]
+                        }
+                    ]
+                
+                }
+            ]
+
         }
         
     ]

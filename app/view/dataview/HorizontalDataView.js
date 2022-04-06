@@ -24,12 +24,10 @@ Ext.define('MyLab.view.dataview.HorizontalDataView', {
             type: "Speakers",
             autoLoad: true
         },
-
-        /*
-        ESTA DANDO UM ERRO NO PLUGIN dataviewtip
-        Uncaught Error: DOM element with id dataviewtip in Element cache is not the same as element in the DOM. Make sure to clean up Element instances using destroy()
+   
         plugins: {
             dataviewtip: {
+                id: 'horizontal-dataviewtip-id',
                 align: 'tl-bl',
                 maxHeight: 200,
                 width: 300,
@@ -44,6 +42,6 @@ Ext.define('MyLab.view.dataview.HorizontalDataView', {
                     '<strong>Biografia</strong><div class="info">{bio:substr(0, 100)}</div>'
             }
         }
-        */
+        
     }]
 });
